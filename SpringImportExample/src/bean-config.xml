@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- this is used for understatndiing purpose only , no any class is refering 
+	this xml -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="appDao" class="com.pravin.spring.tutorial.beans.MyAppDao" />
+	<bean id="empEntity" class="com.pravin.spring.tutorial.beans.Employee" />
+	<bean id="companyBean" class="com.pravin.spring.tutorial.beans.Company" />
+</beans>
