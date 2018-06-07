@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.3.xsd">
+	<bean
+		id="dbConfig"
+		class="com.pravin.spring.tutorial.bean.DatabaseConfig">
+		<property
+			name="properties"
+			ref="props"></property>
+	</bean>
+	<util:properties id="props">
+		<prop key="drivaerClassName">oracle.jdbc.driver.OracleDriver</prop>
+		<prop key="url">jdbc:oracle:thin:@abc:1521:db</prop>
+		<prop key="userName">pp</prop>
+		<prop key="password">ppabcd</prop>
+	</util:properties>
+
+</beans>
